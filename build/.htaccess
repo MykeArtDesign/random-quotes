@@ -1,0 +1,5 @@
+RewriteBase /
+RewriteRule  ^ index \ .html $  -  [L]
+RewriteCond  % {REQUEST_FILENAME}  ! -F
+RewriteCond  % {REQUEST_FILENAME}  ! -D
+RewriteRule  .  /index.html  [L]
